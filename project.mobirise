@@ -51,8 +51,8 @@
       "settings": {
         "main": true,
         "title": "Home",
-        "meta_descr": "",
-        "header_custom": "",
+        "meta_descr": "\"Anthium Dioxcide, roztwór stabilizowany dwutlenku chloru, skuteczny w dezynfekcji wody pitnej, wód technologicznych, instalacji produkcyjnych, płukaniu warzyw i owoców, oraz wszelkich powierzchni twardych .\"",
+        "header_custom": "<meta name=\"keywords\" content=\"anthium dioxcide, dwutlenek chloru, dezynfekcja wody, schładzalniki tuszek, przedłużenie trwałości, mięso, owoce, warzywa, plamistość pieczarek, farmy drobiu, ubojnie drobiu, usuwanie zapachów, płukanie, zamgławianie, natryskiwanie\" />",
         "footer_custom": "",
         "html_before": ""
       },
