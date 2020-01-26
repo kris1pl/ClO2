@@ -26,7 +26,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="inner-container align-center"  style="width: 100%;">
+    <div class="inner-container"  style="width: 100%;">
       <br>
       <br>
       <h4>Przykro nam, że chcesz zrezygnować z otrzymywania naszych wiadomości. 
@@ -35,25 +35,38 @@
       </h4>
       <br>
 
-    <form name="unsubscribe" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com">
-
-        <label class="mbr-text">Chcę otrzymywać wiadomości dalej <input value="Continue" name="choice" type="radio"/></label>   
-      </p>
-      <p>
-        <label class="mbr-text">Nie chcę otrzymywać więcej wiadomości <input value="Unsubscribe" name="choice"  type="radio"/></label>   
-      </p>
-
-      <p>
+      <form name="unsubscribe" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com">
+        <div class="row row-sm-offset">
+          <div class="col-md-4 multi-horizontal center" data-for="email">
+            <div class="form-group">
+              <p>
+              <label class="form-control-label mbr-fonts-style display-" for="email-form1-1d">Twój adres email</label>
+              <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-1d">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-sm-offset">
+          <div class="col-md-4 multi-horizontal center" data-for="email">
+            <div class="form-group">
+              <p>
+              <label class="mbr-text">Chcę otrzymywać wiadomości dalej <input name="choice" type="radio"/></label>   
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-sm-offset">
+          <div class="col-md-4 multi-horizontal center" data-for="email">
+            <div class="form-group">
+              <p>
+              <label class="mbr-text">Nie chcę otrzymywać więcej wiadomości <input name="choice"  type="radio"/></label>   
+              </p>
+            </div>
+          </div>
+        </div>
+        <p>
         <button class="btn btn-primary btn-form display-4" type="submit" >Send</button>
-      </p>
-<!--         <button class="btn btn-primary btn-form display-4" type="sumbit" href="mailto:anthium.pl@gmail.com">
-        Chcę otrzymywać wiadomości dalej
-        </button>
-        <br>
-        <br>
-      <button class="btn btn-warning btn-form display-4" type="submit" href="mailto:anthium.pl@gmail.com">
-      Nie chcę otrzymywać więcej wiadomości
-      </button> -->
+        </p>
     </form>
 </div>
 </div>
