@@ -93,22 +93,22 @@ function postToGoogle() {
   
                $.ajax({
                    url: "https://docs.google.com/forms/d/1Qg0UYHb25oPBP9zVDOdWyyywoXyAeNUOyh9nYC9YD4A/formResponse?",
-          data: {"entry.752821941": field1},
-                   type: "POST",
-                   dataType: "xml",
-                   success: function(d)
-          {
-          },
-          error: function(x, y, z)
-            {
+                  data: {"entry.752821941": field1},
+                           type: "POST",
+                           dataType: "xml",
+                           success: function(d)
+                  {
+                  },
+                  error: function(x, y, z)
+                    {
 
-              $('#success-msg').show();
-              $('#form').hide();
-              
-            }
-               });
-        return false;
-           }
+                      $('#success-msg').show();
+                      $('#form').hide();
+                      
+                    }
+                       });
+                return false;
+                   }
 </script>
 </body>
 </html>
