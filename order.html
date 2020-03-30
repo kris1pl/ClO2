@@ -58,12 +58,12 @@
           <br>
           <h3>Formularz zamówienia</h3>
             <br>
-            <p class="text-justify">Prosimy wypełnić formularz zamówienia i nacisnąć przycisk "Wyślij zamówienie". Po zwryfikowaniu zamówienia prześlemy do Państwa fakturę pro-forma a po otrzymaniu płatności zamówiony towar wraz z fakturą VAT zostanie niezwłocznie do Państwa wysłany za pośrednictwem firmy kurierskiej. Uprzejmie informujemy, że zamówienia realizujemy jedynie do podmiotów prowadzących działalność gospodarczą. </p>
+            <p class="text-justify">Prosimy wypełnić formularz zamówienia i nacisnąć przycisk "Wyślij zamówienie". Po zwryfikowaniu zamówienia prześlemy do Państwa fakturę pro-forma a po otrzymaniu płatności zamówiony towar wraz z fakturą VAT zostanie niezwłocznie do Państwa wysłany za pośrednictwem firmy kurierskiej. Uprzejmie informujemy, że zamówienia realizujemy jedynie do podmiotów prowadzących działalność gospodarczą. Koszt przesyłki kurierskiej na terenie Polski wliczony w cenę. </p>
           <br>
 
         <form name="order" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com">
         <div class="form-row">
-          <div class="col-md-12 align-center" >
+          <div class="col-md-12 align-center">
             <div class="form-group">
               <label class="form-control-label mbr-fonts-style display-">Email</label>
               <input id="emailField" class="form-control" name="email" placeholder="Adres email" type="email" required>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="form-row">
-          <div class="col-md-12 align-center" data-for="company">
+          <div class="col-md-12 align-center">
             <div class="form-group">
               <label class="form-control-label mbr-fonts-style display-">Nazwa firmy</label>
               <input id="companyField" class="form-control" name="company" placeholder="Pełna nazwa firmy" type="text" required>
@@ -79,90 +79,86 @@
           </div>
         </div>
         <div class="form-row">
-          <div class="col-md-12 align-center" data-for="adres">
+          <div class="col-md-6 align-center">
             <div class="form-group">
-              <label class="form-control-label mbr-fonts-style display-">Nazwa firmy</label>
-              <input id="companyField" class="form-control" name="adres" placeholder="Miejscowość, ulica, numer domu i lokalu" type="text" required>
+              <label class="form-control-label mbr-fonts-style display-">Miejscowość</label>
+              <input id="townField" class="form-control" name="town" placeholder="Miejscowość" type="text" required>
+            </div>
+          </div>
+           <div class="col-md-6 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Ulica</label>
+              <input id="streetField" class="form-control" name="street" placeholder="Ulica" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">NIP</label>
+              <input id="nipField" class="form-control" name="nip" placeholder="NIP" type="text" required>
+            </div>
+          </div>
+           <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Numer domu, lokalu</label>
+              <input id="houseField" class="form-control" name="house" placeholder="Numer domu, lokalu" type="text" required>
+            </div>
+          </div>
+          <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Kod pocztowy</label>
+              <input id="zipField" class="form-control" name="zip" placeholder="Kod pocztowy" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Produkt</label>
+              <input id="product1Field" class="form-control" name="product1" value="Anthium Dioxcide" type="text" required>
+            </div>
+          </div>
+           <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Wielkość opakowania</label>
+              <input id="pack1Field" class="form-control" name="pack1" value="25 L" type="text" required>
+            </div>
+          </div>
+          <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Ilość</label>
+              <input id="quantity1Field" class="form-control" name="quantity1" placeholder="Ilość" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Produkt</label>
+              <input id="product2Field" class="form-control" name="product2" value="Kwas cytrynowy" type="text" required>
+            </div>
+          </div>
+           <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Wielkość opakowania</label>
+              <input id="pack2Field" class="form-control" name="pack2" value="25 kg" type="text" required>
+            </div>
+          </div>
+          <div class="col-md-3 align-center">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-">Ilość</label>
+              <input id="quantity2Field" class="form-control" name="quantity2" placeholder="Ilość" type="text" required>
             </div>
           </div>
         </div>
 
 
 
+
         <button class="btn btn-primary btn-form display-4" type="submit" >Wyślij</button>
         </form>
 
-
-
-
-
-
-<!--   <form name="order" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com" action="/index">
-          <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="true" data-form-field="Email">
-    </div>
-    <div class="form-group col-md-6">
-    <label for="inputName">Osoba zamawiająca</label>
-    <input type="text" class="form-control" id="inputName" placeholder="Imię i Nazwisko" required="true" data-form-field="Osoba">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputFirma">Firma</label>
-    <input type="text" class="form-control" id="inputFirma" placeholder="Pełna nazwa firmy" required="true" data-form-field="Firma">
-  </div>
-    <div class="form-group">
-    <label for="inputAddress">Adres</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Ulica, numer domu i lokalu" required="true" data-form-field="Adres">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Miejscowość</label>
-      <input type="text" class="form-control" id="inputCity" required="true" data-form-field="Miejscowość">
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Kod pocztowy</label>
-      <input type="text" class="form-control" id="inputZip" required="true" data-form-field="Kod">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputNIP">NIP</label>
-      <input type="text" class="form-control" id="inputNIP" required="true" data-form-field="NIP">
-    </div>
-  </div>
-    <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputProdukt">Produkt</label>
-      <input type="text" class="form-control" id="inputProdukt" required="true" value="Anthium Dioxcide" data-form-field="Produkt1">
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputSize">Wielkość opakowania</label>
-      <input type="text" class="form-control" id="inputSize" value="25 L" data-form-field="Opakowanie">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputQuantity">Ilość</label>
-      <input type="text" class="form-control" id="inputQuantity" placeholder="ilość sztuk" required="true" data-form-field="Ilość">
-    </div>
-  </div>
-      <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputProdukt2">Produkt</label>
-      <input type="text" class="form-control" id="inputProdukt2" required="true" value="Kwas cytrynowy" data-form-field="Produkt2">
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputSize2">Wielkość opakowania</label>
-      <input type="text" class="form-control" id="inputSize2" value="10 kg" data-form-field="Opakowanie2">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputQuantity2">Ilość</label>
-      <input type="text" class="form-control" id="inputQuantity2" placeholder="ilość sztuk" required="true" data-form-field="Ilość2">
-    </div>
-  </div>
-
-
-  <button type="submit" class="btn btn-primary" onclick="window.location.href = 'http://https://anthium.pl/';">Wyślij zamówienie</button>
-
-
-    </form> -->
 </div>
 </div>
 </body>
