@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 
 </head>
@@ -29,14 +30,48 @@
     <div class="inner-container align-center"  style="width: 100%;">
       <br>
       <br>
-      <h3>Formularz zamówienia.</h3>
-      <br>
-      <p>Prosimy wypełnić formularz zamówienia i nacisnąć przycisk "Wyślij zamówienie".</p>
-      <p>Po zwryfikowaniu zamówienia prześlemy do Państwa fakturę pro-forma.</p>
-      <p>Po otrzymaniu płatności zamówienie wraz z fakturą zostanie niezwłocznie do Państwa wysłane.</p>
-      <br>
+      <h3>Cennik</h3>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nazwa produktu</th>
+              <th scope="col">Wielkość opakowania</th>
+              <th scope="col">Cena jednostkowa netto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Anthium Dioxcide</td>
+              <td>25 L</td>
+              <td>24,- PLN</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Kwas cytrynowy</td>
+              <td>25 kg</td>
+              <td>10,- PLN</td>
+            </tr>
+          </tbody>
+        </table>
+          <br>
+          <h3>Formularz zamówienia</h3>
+            <br>
+            <p class="text-justify">Prosimy wypełnić formularz zamówienia i nacisnąć przycisk "Wyślij zamówienie". Po zwryfikowaniu zamówienia prześlemy do Państwa fakturę pro-forma a po otrzymaniu płatności zamówiony towar wraz z fakturą VAT zostanie niezwłocznie do Państwa wysłany za pośrednictwem firmy kurierskiej. Uprzejmie informujemy, że zamówienia realizujemy jedynie do podmiotów prowadzących działalność gospodarczą. </p>
+          <br>
 
-  <form name="order" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com" action="/index">
+        <form name="order" method="POST" href="mailto:anthium.pl@gmail.com" action="/index">
+          <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="true" data-form-field="Email">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Wyślij zamówienie</button>
+        </form>
+
+<!--   <form name="order" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com" action="/index">
           <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -101,7 +136,7 @@
   <button type="submit" class="btn btn-primary" onclick="window.location.href = 'http://https://anthium.pl/';">Wyślij zamówienie</button>
 
 
-    </form>
+    </form> -->
 </div>
 </div>
 </body>
