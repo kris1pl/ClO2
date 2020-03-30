@@ -36,7 +36,8 @@
       </h4>
       <br>
 
-      <form name="unsubscribe" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com" action="/index">
+    <!--   <form name="unsubscribe" method="POST" data-netlify="true" href="mailto:anthium.pl@gmail.com" action="/index"> -->
+        <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
         <div class="row row-sm-offset">
           <div class="col-md-4"></div>
           <div class="col-md-4 align-center" data-for="email">
@@ -73,8 +74,41 @@
         <button class="btn btn-primary btn-form display-4" type="submit" onclick="window.location.href = 'http://https://practical-allen-16b5f2.netlify.com/';" >Wyślij</button>
         </p> -->
     </form>
+
+    <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
 </div>
 </div>
+
+<script>
+function postToGoogle() {
+               var field1 = $("#email").val();
+        
+        if(field1 == ""){
+          alert('Proszę wpisać adres email');
+          document.getElementById("email").focus();
+          return false;
+        }
+      
+  
+               $.ajax({
+                   url: "https://docs.google.com/forms/d/1Qg0UYHb25oPBP9zVDOdWyyywoXyAeNUOyh9nYC9YD4A/formResponse?",
+          data: {"entry.752821941": field1},
+                   type: "POST",
+                   dataType: "xml",
+                   success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+
+              $('#success-msg').show();
+              $('#form').hide();
+              
+            }
+               });
+        return false;
+           }
+</script>
 </body>
 </html>
 
